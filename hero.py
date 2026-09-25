@@ -22,11 +22,12 @@ class Hero:
 
     def take_damage(self, damage):
         # Subtract damage, but do not allow health to fall below 0.
-        if self.health <= 0:
+        if self.health >= 0:
             self.health -= damage
+            print(f"{self.name} takes {damage} damage. Health: {self.health}")
 
     def is_alive(self):
         # Return a Boolean based on this Hero's health.
-        return (self.health <= 0)
+        return (self.health > 0)
 
 
