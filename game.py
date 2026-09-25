@@ -37,15 +37,15 @@ def main():
     print(f"the hero: {hero.name} enters the arena with {hero.health} health.")
     battle(hero, goblin)
 
-    #heroFirstAttack = hero.attack()
-    #print(f"{hero.name} attacks {goblin.name}, landing {heroFirstAttack} damage!")
-    #goblin.take_damage(heroFirstAttack)
+    heroFirstAttack = hero.attack()
+    print(f"{hero.name} attacks {goblin.name}, landing {heroFirstAttack} damage!")
+    goblin.take_damage(heroFirstAttack)
  
 
-    #if(goblin.is_alive):
-    #    anotherAttack = hero.attack()
-    #    print(f"{hero.name} attacks {goblin.name}, landing {anotherAttack} damage!")
-    #    goblin.take_damage(anotherAttack)
+    if(goblin.is_alive):
+        anotherAttack = hero.attack()
+        print(f"{hero.name} attacks {goblin.name}, landing {anotherAttack} damage!")
+        goblin.take_damage(anotherAttack)
     
 
     
